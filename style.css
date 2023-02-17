@@ -17,9 +17,9 @@ footer ul li{
 
 }
 main{
-    display: flex;
-    flex: 1;
+   
     display: grid;
+    grid-template-columns:20% 60% 20%;
     grid-template-areas:
     "h h h"
     "n n n"
@@ -28,18 +28,71 @@ main{
 ;
 }
 .elerhetosegb{
+    margin: 10px;
     grid-area: e;
+    color:black;
+    display: inline-block;
+    background-color: antiquewhite;
+    max-height: 50vh;
+    border: solid black 3px;
+}
+header{
+    grid-area: h;
+    
+    
+}
+header h1{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+header img{
+    margin: 20px;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 200px;
+    border: solid black 3px;
 }
 nav{
     grid-area: n;
 }
 aside{
+    margin: 10px;
     grid-area: as;
+    display: inline-block;
+    background-color: antiquewhite;
+    max-height: 50vh;
+    border: solid black 3px;
+    
 
 }
 article{
+    margin-top: 10px;
+    background-color: antiquewhite;
     grid-area: a;
+    text-align: center;
+    min-height: 90vh;
+    padding: 5px;
+    border: solid black 3px;
+}
+article p{
+    text-align: justify;
+}
+article ul li{
+    text-align: left;
 }
 footer{
     grid-area: f;
 }
+@media screen and (max-width: 700px) {
+    main{
+        grid-template-areas:
+        "h"
+        "n"
+        "a"
+        "as"
+        "e"
+        "f"
+    }
+  }
+  
