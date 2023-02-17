@@ -8,3 +8,32 @@ body{
     color:black;
 
 }
+aside ul li{
+    list-style-type: none;
+}
+footer ul li{
+    list-style-type: none;
+
+}
+main{
+    display: grid;
+    grid-template-areas:
+    "h h h"
+    "n n n"
+    "a a as"
+    "f f f"
+;
+}
+nav{
+    grid-area: n;
+}
+aside{
+    grid-area: as;
+
+}
+article{
+    grid-area: a;
+}
+footer{
+    grid-area: f;
+}
