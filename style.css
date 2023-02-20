@@ -17,15 +17,10 @@ footer ul li{
 
 }
 main{
-   
     display: grid;
-    grid-template-columns:20% 60% 20%;
-    grid-template-areas:
-    "h h h"
-    "n n n"
-    "e a as"
-    "f f f"
-;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 10px;
 }
 .elerhetosegb{
     margin: 10px;
